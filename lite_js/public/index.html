@@ -1,0 +1,61 @@
+<head>
+    <title>MATRIX Robot Arm</title>
+    <link rel="shortcut icon" href="images/ever-loop.png" type="image/png"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<!--Servos-->
+<div id="numpad-layout" style="display:none">
+	<div class="control-wrapper">
+		<div class="card">
+			<p class="servo-number">Servo 0</p>
+			<span id="servo-0-val">160</span><br/>
+			<input type="range" min="90" max="230" value="160" class="slider" id="servo-0">
+		</div>
+
+		<div class="card">
+			<p class="servo-number">Servo 1</p>
+			<span id="servo-1-val">167</span><br/>
+			<input type="range" min="100" max="235" value="167" class="slider" id="servo-1">
+		</div>
+
+		<div class="card">
+			<p class="servo-number">Servo 2</p>
+			<span id="servo-2-val">90</span><br/>
+			<input type="range" min="0" max="230" value="90" class="slider" id="servo-2">
+		</div>
+
+		<div class="card">
+			<p class="servo-number">Servo 3</p>
+			<span id="servo-3-val">90</span><br/>
+			<input type="range" min="0" max="180" value="90" class="slider" id="servo-3">
+		</div>
+
+		<div class="card">
+			<p class="servo-number">Servo 4</p>
+			<span id="servo-4-val">101</span><br/>
+			<input type="range" min="30" max="172" value="101" class="slider" id="servo-4">
+		</div>
+
+		<div class="card">
+			<p class="servo-number">Servo 5</p>
+			<span id="servo-5-val">70</span><br/>
+			<input type="range" min="50" max="90" value="70" class="slider" id="servo-5">
+		</div>
+	</div>	
+
+	<div class="control-wrapper">
+		<button id="light-on" class="card-lights buttons"><span class="button-text">Light ON</span></button>
+		<button id="light-off" class="card-lights buttons"><span class="button-text">Light OFF</span></button>
+		<button id="luxo-on" class="card-lights buttons"><span class="button-text">Luxo ON</span></button>
+		<button id="luxo-off" class="card-lights buttons"><span class="button-text">Luxo OFF</span></button>
+	</div>
+</div>
+
+</body>
+

@@ -1,0 +1,255 @@
+body{
+    background-image: url(images/background.png);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #f0edf2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    font: normal normal normal 50px Arial,sans-serif;
+}
+
+::-moz-selection{
+    background-color:Transparent;
+    color:#fff;
+    }
+
+::selection {
+    background-color:Transparent;
+    color:#fff;
+    }
+
+@font-face {
+    font-family: "BN-titling-oblique";
+    src: url(fonts/big-noodle-titling-oblique.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "BN-titling";
+    src: url(fonts/big-noodle-titling.ttf) format("truetype");
+}
+
+#users-connected{
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	color: #fff;
+	background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#users-connected-text{
+	margin: 0px;
+	font-size: 35px;
+	font-family: "BN-titling", Fallback, sans-serif;
+}
+
+#navigation{
+    display: block;
+    margin:auto;
+    margin-bottom: 15px;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+.nav-item, .nav-slash{
+    display: inline-block;
+    font-size: 50px;
+    color: #000;
+    font-family: "BN-titling";
+    list-style-type: none;
+}
+
+#nav-item1{
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+.nav-item{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 7px;
+    font-family: "BN-titling";
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.50) !important;
+    cursor: pointer;
+}
+
+.nav-item:active {
+    background-color: rgba(0, 0, 0, 0.50) !important;
+    color: #fff;
+}
+
+.nav-item::-moz-selection, .nav-item::selection{
+    background-color:Transparent;
+    color:#000;
+}
+
+
+.control-wrapper::-moz-selection, .control-wrapper::selection{
+	background-color:Transparent;
+    color:#fff;
+}
+
+.control-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    /* padding: 5px; */
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    height: auto;
+}
+
+.buttons {
+    display: inline-block;
+    margin: auto;
+    /* padding: 20px; */
+    width: 31%;
+    /* max-width: 20%; */
+    height: auto;
+    background-color: rgba(63, 63, 63, 0.49);
+    border-radius: 2%;
+}
+
+.buttons:hover {
+    background-color: rgba(63, 63, 63, 0.49);
+    cursor: pointer;
+}
+
+.buttons:active {
+    background-color: rgb(45, 45, 45);
+}
+
+.button-text{
+	font-family: "BN-titling", Fallback, sans-serif;
+	font-size: 30px;
+	color: #fff;
+	margin: 0;
+	pointer-events: none;
+}
+
+.numpad{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 365px) {
+  .nav-item, .nav-slash{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 337px) {
+  .buttons{
+    padding: 10px;
+    width: 17%;
+  }
+}
+
+@media (max-width: 298px) {
+  .nav-item, .nav-slash{
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 270px) {
+  .nav-item, .nav-slash{
+    font-size: 30px;
+  }
+  #button-power{
+    font-size: 19px;
+  }
+  #button-guide, #button-enter{
+    font-size: 20px;
+  }
+}
+
+
+/* SERVO SLIDER CONTROLS */
+.servo-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    padding: 10;
+    margin: 0;
+    color: white;
+    font-family: "BN-titling-oblique";
+}
+
+.card span {
+    color: white;
+    font-family: "BN-titling-oblique";
+}
+
+.card {
+    position: relative;
+    max-width: 500px;
+    background: #fffbfb40;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    min-width: 300px;
+    height: 145px;
+    margin: 15px;
+}
+
+.card-lights {
+    position: relative;
+    max-width: 500px;
+    background: #fffbfb40;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    min-width: 150px;
+    height: 105px;
+    margin: 15px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 25px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
